@@ -1,0 +1,36 @@
+form {
+    height: 200px;
+    width: 960px;
+}
+
+.dsf-filter-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.dsf-filter-container input {
+    height: 40px;
+    width: 200px;
+    border: 1px solid var(--dsf-color-font-two);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.dsf-filter-container input::placeholder {
+    color: var(--dsf-color-font-two);
+}
+
+.dsf-filter-container button {
+    height: 40px;
+    width: 200px;
+    background-color: var(--dsf-color-primary);
+    color: var(--dsf-color-secondary);
+    border: 1px solid var(--dsf-color-primary);
+    border-radius: 5px;
+}
+
+.dsf-filter-container button:hover {
+    cursor: pointer;
+}

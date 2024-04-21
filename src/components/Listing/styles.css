@@ -1,0 +1,9 @@
+.dsf-listing-container {
+    padding: 20px 20px;
+}
+
+.dsf-listing-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,7 +1,15 @@
 :root {
   --dsf-color-primary: #55BC04;
-  --dsf-color-bg-primary: #C2C2C2;
-  --dsf-color-font-tertiary: #fff;
+  --dsf-color-secondary: #fff;
+
+  --dsf-color-bg-one: #C2C2C2;
+
+  --dsf-color-font-one: #fff;
+  --dsf-color-font-two: #C2C2C2;
+  --dsf-color-font-three: #6F6F6F;
+
+  --dsf-color-card-bg: #C2C2C2;
+
 
 }
 
@@ -20,7 +28,7 @@ a:hover {
 
 html,
 body {
-  background-color: var(--dsf-color-bg-primary);
+  background-color: var(--dsf-color-bg-one);
 }
 
 main {
@@ -51,6 +59,12 @@ nav a {
 
 
 
+
+
+.dsf-card {
+  border-radius: 5px;
+  background-color: var(--dsf-color-secondary);
+}
 
 .dsf-container {
   width: 100%;

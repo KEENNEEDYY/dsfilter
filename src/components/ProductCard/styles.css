@@ -1,0 +1,14 @@
+.dsf-product-card-container {
+    padding: 10px 10px;
+    border: 1px solid var(--dsf-color-primary);
+    border-radius: 5px;
+}
+
+.dsf-product-card-container h5 {
+    color: var(--dsf-color-font-three);
+    font-weight: 400;
+}
+
+.dsf-product-card-container h4 {
+    color: var(--dsf-color-primary);
+}
