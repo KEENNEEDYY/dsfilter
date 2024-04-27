@@ -2,6 +2,7 @@
     padding: 10px 10px;
     border: 1px solid var(--dsf-color-primary);
     border-radius: 5px;
+    min-width: 110px;
 }
 
 .dsf-product-card-container h5 {
