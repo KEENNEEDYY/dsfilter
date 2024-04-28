@@ -1,6 +1,8 @@
+import { useContext, useEffect } from 'react';
 import { ProductDTO } from '../../models/ProductDTO';
 import ProductCard from '../ProductCard';
 import './styles.css';
+import { ContextProductListingCount } from '../../utils/context-product-listing';
 
 type Props = {
     productsListing: ProductDTO[];
@@ -8,6 +10,12 @@ type Props = {
 
 
 export default function Listing({ productsListing }: Props) {
+
+    const { setContextProductListingCount } = useContext(ContextProductListingCount);
+
+    useEffect(() => {
+        setContextProductListingCount(productsListing.length);
+    }, [productsListing]);
 
     return (
         <div className="dsf-listing-container dsf-card">

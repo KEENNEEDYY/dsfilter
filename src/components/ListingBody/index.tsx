@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import Filter from '../Filter';
 import Listing from '../Listing';
 
-import './styles.css';
 import { ProductDTO } from '../../models/ProductDTO';
 import * as productSevice from '../../services/product-service';
+import './styles.css';
 
 type QueryParams = {
     minValue: number;
@@ -22,14 +22,12 @@ export default function ListingBody() {
 
     useEffect(() => {
         setProducts(productSevice.findByPrice(queryParams.minValue, queryParams.maxValue));
-        // console.log(products);
     }, [queryParams]);
 
     function handleFilter(value: QueryParams) {
         setProducts([]);
         setQueryParams({ ...queryParams, maxValue: value.maxValue, minValue: value.minValue });
         setProducts(productSevice.findByPrice(queryParams.minValue, queryParams.maxValue));
-        console.log(queryParams);
     }
 
     return (

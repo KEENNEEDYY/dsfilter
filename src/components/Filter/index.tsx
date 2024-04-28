@@ -52,6 +52,5 @@ export default function Filter({ onFilter }: Props) {
                 <button type="submit"><h3>Filtrar</h3></button>
             </div>
         </form>
-
     )
 }
